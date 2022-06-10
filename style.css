@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+}
+
+body > header > img {
+    width: 180px;
+    text-align: center;
+}
+
+body > header {
+    background-color: #FFFFFF;
+    width: 1440px;
+    height: 80px
+    text-align: center;
+}
