@@ -1,15 +1,18 @@
-body {
-    width: 100%;
-}
-
 body > header > img {
-    width: 180px;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
     text-align: center;
 }
 
 body > header {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     width: 1440px;
-    height: 80px
+    height: 80px;
+    text-align: center;
+}
+
+.maps {
+    background-color: #eaeaea;
     text-align: center;
 }
