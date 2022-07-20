@@ -8,10 +8,19 @@ body > header {
     padding-bottom: 30px;
 }
 
+<<<<<<< Updated upstream
 body > header > img {
     width : 300px;
     height : 50px;
     margin: auto;
+=======
+body > header {
+    background-color: #FFF;
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+>>>>>>> Stashed changes
 }
 
 .Maps {
@@ -59,6 +68,15 @@ body > main > header > a {
     color: #fff;
 }
 
+<<<<<<< Updated upstream
 .fonctionnement > ul > li > i {
     color : #7e7e7e;
+=======
+p {
+    font-weight: lighter;
+}
+
+li {
+    text-decoration: none;
+>>>>>>> Stashed changes
 }
