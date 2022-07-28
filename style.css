@@ -3,27 +3,27 @@ body {
 }
 
 /* EN TÊTE */
-body > header {
+body header {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
 }
 
 body > header > img {
-    width : 300px;
-    height : 50px;
+    width: 300px;
+    height: 50px;
     margin: auto;
 }
 
 /* BARRE DE RECHERCHE */
-.Maps {
+form {
     background-color: #eaeaea;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.Maps > i {
+form i {
     margin-right: 5px;
 }
 
@@ -42,7 +42,7 @@ body > main > header {
 }
 
 body > main > header > a {
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border-radius: 20px;
     background: -moz-linear-gradient(#ff79DA, #9356DC);
     color: #fff;
@@ -51,31 +51,32 @@ body > main > header > a {
 
 /* LISTE DE PUCE ET FONCTIONNEMENT */
 
-.fonctionnement > ul > li {
-    list-style-type: none;
-    background-color: #f6f6f6;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 30px 20px 30px 20px;
-}
-
-.liste {
+.fonctionnement ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
 }
 
-.fonctionnement > ul > li > span {
+.fonctionnement li {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 30px 20px 30px 20px;
+    list-style-type: none;
+    background-color: #f6f6f6;
+}
+
+.fonctionnement span {
+    margin: 0 5px 0 0;
+    padding: 2px 7px 2px 7px;
+    border-radius: 50%;
     min-height: 30px;
     min-width: 30px;
-    border-radius: 50%;
     background-color: #9356DC;
     color: #fff;
-    margin: 0px 5px 0px 5px;
 }
 
-.fonctionnement > ul > li > i {
+.fonctionnement i {
+    margin: 0 5px 0 5px;
     color : #7e7e7e;
-    margin: 0px 5px 0px 5px;
 }
