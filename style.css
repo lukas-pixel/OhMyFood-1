@@ -31,6 +31,7 @@ input {
     margin-left: 5px;
     border: none;
     background-color: transparent;
+    font-weight: bold;
 }
 
 /* HEADER MAIN + BOUTON EXPLORER */
@@ -51,6 +52,11 @@ body > main > header > a {
 
 /* LISTE DE PUCE ET FONCTIONNEMENT */
 
+.fonctionnement {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .fonctionnement ul {
     display: flex;
     flex-direction: row;
@@ -64,9 +70,11 @@ body > main > header > a {
     padding: 30px 20px 30px 20px;
     list-style-type: none;
     background-color: #f6f6f6;
+    box-shadow: 0 5px 8px #e2e2e2;
 }
 
 .fonctionnement span {
+    
     margin: 0 5px 0 0;
     padding: 2px 7px 2px 7px;
     border-radius: 50%;
@@ -83,13 +91,44 @@ body > main > header > a {
 
 /* CARD RESTAURANT */
 
+#restaurants {
+    background-color: #f6f6f6;
+}
+
+#restaurants div {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 16px 0;
+}
+
+#restaurants article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 #restaurants figure {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    flex-basis: 49%;
+    background-color: #fff;
+    border-radius: 18px; 
 } 
 
+#restaurants > article > figure > a {
+    height: auto;
+}
+
 #restaurants img {
+    height: 200px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 18px 18px 0 0;
+    border-radius: 18px 18px 0 0; 
+}
+
+#restaurants figcaption {
+    height: 60px;
 }
