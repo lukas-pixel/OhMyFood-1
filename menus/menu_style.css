@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+/* HEADER */
+
+body header {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+body > header > img {
+    width: 172.933px;
+    height: 30px;
+    margin: auto; 
+}
+
+body figure {
+    margin: 0;
+    padding: 0;
+}
+
+body > figure > img {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+/* MENU */
+
+body article {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: 35px 35px 0 0;
+}
+
+body article h1 {
+    font-family: "Shrikhand",cursive;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ENTREE */
+
+h2 {
+    text-transform: uppercase;
+    text-decoration : underline #99E2D0 3px;
+}
+
+.entree ul {
+    list-style-type: none;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
