@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
 
 /* EN TÊTE */
@@ -35,18 +36,20 @@ input {
 }
 
 /* HEADER MAIN + BOUTON EXPLORER */
-body > main > header {
+body main header {
     background-color: #f6f6f6;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-body > main > header > a {
+body > main header a {
     padding: 10px;
     border-radius: 20px;
-    background: -moz-linear-gradient(#ff79DA, #9356DC);
+    background: linear-gradient(170deg, #ff79da 1%, #9356dc 70%);
+    box-shadow: 0 5px 8px #d0d0d0;
     color: #fff;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -74,7 +77,6 @@ body > main > header > a {
 }
 
 .fonctionnement span {
-    
     margin: 0 5px 0 0;
     padding: 2px 7px 2px 7px;
     border-radius: 50%;
@@ -93,6 +95,7 @@ body > main > header > a {
 
 #restaurants {
     background-color: #f6f6f6;
+    padding: 32px 16px;
 }
 
 #restaurants div {
@@ -126,9 +129,57 @@ figure {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    border-radius: 18px 18px 0 0; 
+    border-radius: 18px 18px 0 0;
 }
 
 #restaurants figcaption {
     height: 60px;
+}
+
+#restaurants > div article figure label:first-child {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: #1f9577;
+    background-color: #99e2d0;
+}
+
+#restaurants h3 {
+    margin: 0 15px;
+}
+
+#restaurants p {
+    margin: 0 15px;
+}
+
+#restaurants i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    color: #fff;
+}
+
+footer nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-family: "Shrikhand",cursive;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
 }
