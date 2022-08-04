@@ -68,7 +68,8 @@ body > main header a {
 }
 
 .fonctionnement li {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
     border-radius: 20px;
     padding: 30px 20px 30px 20px;
