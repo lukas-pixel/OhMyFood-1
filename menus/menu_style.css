@@ -72,8 +72,11 @@ ul {
 
 /* ENTREE */
 
+.entree ul {
+    display: flex;
+}
+
 .entree li {
-    width: 1140px;
     display: flex;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -111,8 +114,11 @@ p {
 
 /* PLATS */
 
+.plats ul {
+    display: flex;
+}
+
 .plats li {
-    width: 1140px;
     display: flex;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -138,8 +144,11 @@ p {
 
 /* DESSERTS */
 
+.desserts ul {
+    display: flex;
+}
+
 .desserts li {
-    width: 1140px;
     display: flex;
     margin-bottom: 20px;
     padding-left: 10px;
