@@ -80,7 +80,6 @@ body > main header a {
 
 .fonctionnement span {
     position: absolute;
-    left: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,6 +158,7 @@ figure {
 
 #restaurants h3 {
     margin: 0 15px;
+    text-decoration: none;
 }
 
 #restaurants p {
