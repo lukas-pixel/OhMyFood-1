@@ -74,6 +74,7 @@ ul {
 
 .entree ul {
     display: flex;
+    flex-direction: column;
 }
 
 .entree li {
@@ -105,7 +106,6 @@ h3 {
     padding: 0;
     font-weight: bold;
     font-size: 17.6px;
-    list-style-type: none;
 }
 
 p {
@@ -117,6 +117,7 @@ p {
 
 .plats ul {
     display: flex;
+    flex-direction: column;
 }
 
 .plats li {
@@ -147,6 +148,7 @@ p {
 
 .desserts ul {
     display: flex;
+    flex-direction: column;
 }
 
 .desserts li {
