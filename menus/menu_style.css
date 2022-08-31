@@ -6,7 +6,7 @@ body {
 
 /* HEADER */
 
-body header {
+header {
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
@@ -14,11 +14,18 @@ body header {
     padding-bottom: 30px;
 }
 
-body header h1 {
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
-body > header > img {
+header i {
+    position: relative;
+    left: -490px;
+    font-size: 30px
+}
+
+header img {
     width: 172.933px;
     height: 30px;
     margin: auto; 

@@ -71,8 +71,8 @@ body > main header a {
     display: flex;
     justify-content: space-between;
     margin: 20px;
-    border-radius: 20px;
-    padding: 30px 20px 30px 20px;
+    border-radius: 25px;
+    padding: 20px;
     list-style-type: none;
     background-color: #f6f6f6;
     box-shadow: 0 5px 8px #e2e2e2;
@@ -92,7 +92,7 @@ body > main header a {
 }
 
 .fonctionnement i {
-    margin: 0 5px 0 5px;
+    margin-right: 20px;
     color : #7e7e7e;
 }
 
