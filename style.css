@@ -204,3 +204,21 @@ footer h3 {
 footer ul {
     list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+
+    .fonctionnement h2 {
+        padding-left: 10px;
+    }
+
+    .fonctionnement ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #restaurants article {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
