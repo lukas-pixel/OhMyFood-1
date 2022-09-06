@@ -1,3 +1,16 @@
+:root {
+    --bg-color-1:#eaeaea;
+    --bg-color-2:#f6f6f6;
+    --bg-color-3:#fff;
+    --bg-color-footer:#353535;
+    --bg-color-fonctionnement:#9356DC;
+    --bg-color-nouveau:#99e2d0;
+    --color-font-nouveau:#1f9577;
+    --color-font-1:#fff;
+    --color-font-2:#7e7e7e;
+    --color-font-3:#000;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
@@ -18,7 +31,7 @@ body > header > img {
 
 /* BARRE DE RECHERCHE */
 form {
-    background-color: #eaeaea;
+    background-color: var(--bg-color-1);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -48,7 +61,7 @@ body > main header a {
     border-radius: 20px;
     background: linear-gradient(170deg, #ff79da 1%, #9356dc 70%);
     box-shadow: 0 5px 8px #d0d0d0;
-    color: #fff;
+    color: var(--color-font-1);
     font-weight: bold;
     text-decoration: none;
 }
@@ -74,7 +87,7 @@ body > main header a {
     border-radius: 25px;
     padding: 20px;
     list-style-type: none;
-    background-color: #f6f6f6;
+    background-color: var(--bg-color-2);
     box-shadow: 0 5px 8px #e2e2e2;
 }
 
@@ -87,19 +100,19 @@ body > main header a {
     border-radius: 50%;
     min-height: 30px;
     min-width: 30px;
-    background-color: #9356DC;
-    color: #fff;
+    background-color: var(--bg-color-fonctionnement);
+    color: var(--color-font-1);
 }
 
 .fonctionnement i {
     margin-right: 20px;
-    color : #7e7e7e;
+    color : var(--color-font-2);
 }
 
 /* CARD RESTAURANT */
 
 #restaurants {
-    background-color: #f6f6f6;
+    background-color: var(--bg-color-2);
     padding: 32px 16px;
 }
 
@@ -122,13 +135,13 @@ figure {
     display: flex;
     flex-direction: column;
     flex-basis: 49%;
-    background-color: #fff;
+    background-color: var(--bg-color-3);
     border-radius: 18px; 
 } 
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-font-3);
     }
 
 #restaurants figure > a {
@@ -158,8 +171,8 @@ a {
     top: 5px;
     padding: 6px 15px;
     border-radius: 3px;
-    color: #1f9577;
-    background-color: #99e2d0;
+    color: var(--color-font-nouveau);
+    background-color: var(--bg-color-nouveau);
 }
 
 #restaurants h3 {
@@ -185,8 +198,8 @@ a {
 /* FOOTER */
 
 footer {
-    background-color: #353535;
-    color: #fff;
+    background-color: var(--bg-color-footer);
+    color: var(--color-font-1);
 }
 
 footer nav {
