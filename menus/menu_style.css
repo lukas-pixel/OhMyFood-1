@@ -29,9 +29,9 @@ a {
 }
 
 header i {
-    position: relative;
-    left: -490px;
-    font-size: 30px
+    position: fixed;
+    left: 20px;
+    font-size: 20px
 }
 
 header img {
@@ -237,12 +237,7 @@ footer ul {
     list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
-    header i {
-        position: relative;
-        left: -50px;
-        font-size: 20px
-    }
+@media screen and (min-width: 768px) {
 
     b {
         padding-right: 5px;
