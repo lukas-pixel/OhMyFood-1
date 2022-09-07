@@ -111,12 +111,12 @@ body > main header a {
 
 /* CARD RESTAURANT */
 
-#restaurants {
+.restaurants {
     background-color: var(--bg-color-2);
     padding: 32px 16px;
 }
 
-#restaurants div {
+.restaurants div {
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -125,13 +125,13 @@ figure {
     margin: 16px 0;
 }
 
-#restaurants article {
+.restaurants article {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-#restaurants figure {
+.restaurants figure {
     display: flex;
     flex-direction: column;
     flex-basis: 49%;
@@ -144,28 +144,26 @@ a {
     color: var(--color-font-3);
     }
 
-#restaurants figure > a {
+.restaurants figure > a {
     height: auto;
     display: block;
     position: relative;
 }
 
-#restaurants img {
+.restaurants img {
     height: 200px;
     width: 100%;
     object-fit: cover;
     border-radius: 18px 18px 0 0;
 }
 
-#restaurants figcaption {
+.restaurants figcaption {
     height: 60px;
     display: flex;
     justify-content: space-between;
 }
 
-
-
-#restaurants label {
+.restaurants label {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -175,23 +173,23 @@ a {
     background-color: var(--bg-color-nouveau);
 }
 
-#restaurants h3 {
+.restaurants h3 {
     margin: 0 15px;
     text-decoration: none !important;
 }
 
-#restaurants p {
+.restaurants p {
     margin: 0 15px;
 }
 
-#restaurants i {
+.restaurants i {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
 
-#restaurants i:hover {
+.restaurants i:hover {
     background-color: #ff79da;
 }
 
@@ -218,7 +216,7 @@ footer ul {
     list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .fonctionnement h2 {
         padding-left: 10px;
