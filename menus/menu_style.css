@@ -1,0 +1,245 @@
+:root {
+    --color-font-1:#000;
+    --color-font-2:#fff;
+    --bg-color-menu:#f6f6f6;
+    --bg-color-meal:#fff;
+    --bg-color-footer:#353535;
+    --color-underline-title:#99E2D0;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    color: var(--color-font-1);
+}
+
+/* HEADER */
+
+header {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+header i {
+    position: fixed;
+    left: 20px;
+    font-size: 20px
+}
+
+header img {
+    width: 172.933px;
+    height: 30px;
+    margin: auto; 
+}
+
+body figure {
+    margin: 0;
+    padding: 0;
+}
+
+body > figure > img {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+/* MENU */
+
+body article {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color-menu);
+    border-radius: 35px 35px 0 0;
+}
+
+body article h1 {
+    font-family: "Shrikhand",cursive;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MENUS DES RESTAURANTS */
+
+h2 {
+    text-transform: uppercase;
+    text-decoration : underline var(--color-underline-title) 3px;
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* ENTREE */
+
+.entree ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.entree li {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px #ddd;
+    background-color: var(--bg-color-meal);
+}
+
+.entree div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1080px;
+}
+
+.entree span {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 13px;
+    width: 50px;
+    height: 57px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 17.6px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* PLATS */
+
+.plats ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.plats li {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px #ddd;
+    background-color: var(--bg-color-meal);
+}
+
+.plats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1080px;
+}
+
+.plats span {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 13px;
+    width: 50px;
+    height: 57px;
+}
+
+/* DESSERTS */
+
+.desserts ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.desserts li {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px #ddd;
+    background-color: var(--bg-color-meal);
+}
+
+.desserts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1080px;
+}
+
+.desserts span {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 13px;
+    width: 50px;
+    height: 57px;
+}
+
+/* BOUTON COMMANDER */
+
+article button {
+    margin-bottom: 50px;
+    height: 50px;
+    width: 210px;
+    border-radius: 35px;
+    box-shadow: 0 5px 8px #d0d0d0;
+    color: var(--color-font-2);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: .2s;
+    background: linear-gradient(170deg, #ff79da 1%, #9356dc 70%);
+}
+
+article div {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bg-color-footer);
+    color: var(--color-font-2);
+}
+
+footer nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-family: "Shrikhand",cursive;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    b {
+        padding-right: 5px;
+    }
+}

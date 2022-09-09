@@ -1,35 +1,237 @@
+:root {
+    --bg-color-1:#eaeaea;
+    --bg-color-2:#f6f6f6;
+    --bg-color-3:#fff;
+    --bg-color-footer:#353535;
+    --bg-color-fonctionnement:#9356DC;
+    --bg-color-nouveau:#99e2d0;
+    --color-font-nouveau:#1f9577;
+    --color-font-1:#fff;
+    --color-font-2:#7e7e7e;
+    --color-font-3:#000;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
+    margin: 0;
+}
+
+/* EN TÊTE */
+body header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 body > header > img {
-    max-width: 100px;
-    height: auto;
-    object-fit: contain;
-    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin: auto;
 }
 
-body > header {
-    background-color: #FFF;
-    width: 1440px;
-    height: 80px;
-    text-align: center;
-}
-
+/* BARRE DE RECHERCHE */
 form {
+    background-color: var(--bg-color-1);
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    background-color: #eaeaea;
 }
-.imput {
-    background-color: #eaeaea;
+
+form i {
+    margin-right: 5px;
+}
+
+input {
+    margin-left: 5px;
     border: none;
+    background-color: transparent;
+    font-weight: bold;
 }
 
-main > header {
+/* HEADER MAIN + BOUTON EXPLORER */
+body main header {
+    background-color: #f6f6f6;
     text-align: center;
-    background-color: #eaeaea
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-p {
-    font-weight: lighter;
+body > main header a {
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, #ff79da 1%, #9356dc 70%);
+    box-shadow: 0 5px 8px #d0d0d0;
+    color: var(--color-font-1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* LISTE DE PUCE ET FONCTIONNEMENT */
+
+.fonctionnement {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fonctionnement ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fonctionnement li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 20px;
+    list-style-type: none;
+    background-color: var(--bg-color-2);
+    box-shadow: 0 5px 8px #e2e2e2;
+}
+
+.fonctionnement span {
+    position: relative;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-height: 30px;
+    min-width: 30px;
+    background-color: var(--bg-color-fonctionnement);
+    color: var(--color-font-1);
+}
+
+.fonctionnement i {
+    margin-right: 20px;
+    color : var(--color-font-2);
+}
+
+/* CARD RESTAURANT */
+
+.restaurants {
+    background-color: var(--bg-color-2);
+    padding: 32px 16px;
+}
+
+.restaurants div {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 16px 0;
+}
+
+
+.restaurants article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.restaurants figure {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 49%;
+    background-color: var(--bg-color-3);
+    border-radius: 18px; 
+} 
+
+a {
+    text-decoration: none;
+    color: var(--color-font-3);
+    }
+
+.restaurants figure > a {
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.restaurants img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+
+.restaurants figcaption {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurants label {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: var(--color-font-nouveau);
+    background-color: var(--bg-color-nouveau);
+}
+
+.restaurants h3 {
+    margin: 0 15px;
+    text-decoration: none !important;
+}
+
+.restaurants p {
+    margin: 0 15px;
+}
+
+.restaurants i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.restaurants i:hover {
+    background-color: #ff79da;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bg-color-footer);
+    color: var(--color-font-1);
+}
+
+footer nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-family: "Shrikhand",cursive;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+
+    .fonctionnement h2 {
+        padding-left: 10px;
+    }
+
+    .fonctionnement ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .restaurants article {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
 }
