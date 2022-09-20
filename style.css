@@ -1,14 +1,13 @@
 :root {
-    --bg-color-1:#eaeaea;
-    --bg-color-2:#f6f6f6;
-    --bg-color-3:#fff;
-    --bg-color-footer:#353535;
-    --bg-color-fonctionnement:#9356DC;
-    --bg-color-nouveau:#99e2d0;
-    --color-font-nouveau:#1f9577;
-    --color-font-1:#fff;
-    --color-font-2:#7e7e7e;
-    --color-font-3:#000;
+    --grey-light:#eaeaea;
+    --grey-light-2:#f6f6f6;
+    --white:#fff;
+    --grey-dark:#353535;
+    --purple:#9356DC;
+    --green-light:#99e2d0;
+    --green-dark:#1f9577;
+    --grey:#7e7e7e;
+    --black:#000;
 }
 
 body {
@@ -31,7 +30,7 @@ body > header > img {
 
 /* BARRE DE RECHERCHE */
 form {
-    background-color: var(--bg-color-1);
+    background-color: var(--grey-light);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -50,7 +49,7 @@ input {
 
 /* HEADER MAIN + BOUTON EXPLORER */
 body main header {
-    background-color: #f6f6f6;
+    background-color: var(--grey-light-2);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -61,7 +60,7 @@ body > main header a {
     border-radius: 20px;
     background: linear-gradient(170deg, #ff79da 1%, #9356dc 70%);
     box-shadow: 0 5px 8px #d0d0d0;
-    color: var(--color-font-1);
+    color: var(--white);
     font-weight: bold;
     text-decoration: none;
 }
@@ -87,7 +86,7 @@ body > main header a {
     border-radius: 25px;
     padding: 20px;
     list-style-type: none;
-    background-color: var(--bg-color-2);
+    background-color: var(--grey-light-2);
     box-shadow: 0 5px 8px #e2e2e2;
 }
 
@@ -100,19 +99,19 @@ body > main header a {
     border-radius: 50%;
     min-height: 30px;
     min-width: 30px;
-    background-color: var(--bg-color-fonctionnement);
-    color: var(--color-font-1);
+    background-color: var(--purple);
+    color: var(--white);
 }
 
 .fonctionnement i {
     margin-right: 20px;
-    color : var(--color-font-2);
+    color : var(--grey);
 }
 
 /* CARD RESTAURANT */
 
 .restaurants {
-    background-color: var(--bg-color-2);
+    background-color: var(--grey-light-2);
     padding: 32px 16px;
 }
 
@@ -137,13 +136,13 @@ figure {
     display: flex;
     flex-direction: column;
     flex-basis: 49%;
-    background-color: var(--bg-color-3);
+    background-color: var(--white);
     border-radius: 18px; 
 } 
 
 a {
     text-decoration: none;
-    color: var(--color-font-3);
+    color: var(--black);
     }
 
 .restaurants figure > a {
@@ -171,8 +170,8 @@ a {
     top: 5px;
     padding: 6px 15px;
     border-radius: 3px;
-    color: var(--color-font-nouveau);
-    background-color: var(--bg-color-nouveau);
+    color: var(--green-dark);
+    background-color: var(--green-light);
 }
 
 .restaurants h3 {
@@ -198,11 +197,11 @@ a {
 /* FOOTER */
 
 footer {
-    background-color: var(--bg-color-footer);
-    color: var(--color-font-1);
+    background-color: var(--grey-dark);
+    color: var(--white);
 }
 
-footer nav {
+footer div {
     max-width: 1180px;
     margin: 0 auto;
     padding: 20px;
