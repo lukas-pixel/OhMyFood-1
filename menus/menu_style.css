@@ -198,7 +198,7 @@ article button {
     width: 210px;
     border-radius: 35px;
     box-shadow: 0 5px 8px #d0d0d0;
-    color: var(--color-font-2);
+    color: var(--white);
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ footer {
     color: var(--white);
 }
 
-footer nav {
+footer div {
     max-width: 1180px;
     margin: 0 auto;
     padding: 20px;
