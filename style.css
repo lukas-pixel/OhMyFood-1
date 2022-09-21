@@ -19,7 +19,7 @@ body {
 
 /* overlays */
 
-.overlay {
+#overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,13 +27,18 @@ body {
     height: 100%;
     z-index: 10;
     background-color: #fff;
+    animation-name: overlay-up;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes center {
+@keyframes overlay-up {
     0% {
-        visibility: visible;
+        opacity: 1;
     }
     100% {
+        opacity: 0;
         visibility: hidden;
     }
 }
@@ -192,7 +197,7 @@ body > main header a {
 
 /* CARD RESTAURANT */
 
-.restaurants {
+#restaurants {
     background-color: var(--grey-light-2);
     padding: 32px 16px;
 }
@@ -207,14 +212,14 @@ figure {
 }
 
 
-.restaurants article {
+#restaurants article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-.restaurants figure {
+#restaurants figure {
     display: flex;
     flex-direction: column;
     flex-basis: 49%;
@@ -227,26 +232,26 @@ a {
     color: var(--black);
     }
 
-.restaurants figure > a {
+#restaurants figure > a {
     height: auto;
     display: block;
     position: relative;
 }
 
-.restaurants img {
+#restaurants img {
     height: 200px;
     width: 100%;
     object-fit: cover;
     border-radius: 18px 18px 0 0;
 }
 
-.restaurants figcaption {
+#restaurants figcaption {
     height: 60px;
     display: flex;
     justify-content: space-between;
 }
 
-.restaurants label {
+#restaurants label {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -256,12 +261,12 @@ a {
     background-color: var(--green-light);
 }
 
-.restaurants h3 {
+#restaurants h3 {
     margin: 0 15px;
     text-decoration: none !important;
 }
 
-.restaurants p {
+#restaurants p {
     margin: 0 15px;
 }
 
@@ -321,7 +326,7 @@ footer ul {
         flex-direction: row;
     }
 
-    .restaurants article {
+    #restaurants article {
         display: flex;
         flex-flow: row wrap;
     }
