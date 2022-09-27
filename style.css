@@ -11,10 +11,43 @@
     --pink:#FF79DA;
 }
 
+@keyframes overlay-up {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px var(--purple);
+    }
+    40%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px var(--pink);
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px var(--green-light);
+    }
+}
+
+@keyframes text {
+    50%{
+        color: #000;
+    }
+}
+
 body {
     position: relative;
     font-family: Roboto;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* overlays */
@@ -33,15 +66,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes overlay-up {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
 
 /* Spinners */
 
@@ -59,21 +83,6 @@ body {
     height: 300px;
     border-radius: 50%;
     animation: ring 3s linear infinite;
-}
-
-@keyframes ring {
-    0%{
-        transform: rotate(0deg);
-        box-shadow: 1px 5px 2px var(--purple);
-    }
-    40%{
-        transform: rotate(180deg);
-        box-shadow: 1px 5px 2px var(--pink);
-    }
-    100%{
-        transform: rotate(360deg);
-        box-shadow: 1px 5px 2px var(--green-light);
-    }
 }
 
 .ring:before {
@@ -94,12 +103,6 @@ body {
     letter-spacing: 1px;
     line-height: 200px;
     animation: text 3s ease-in-out linear infinite;
-}
-
-@keyframes text {
-    50%{
-        color: #000;
-    }
 }
 
 /* EN TÊTE */
@@ -212,14 +215,15 @@ figure {
 }
 
 
-#restaurants article {
+.container-figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 
-#restaurants figure {
+.container-figure figure {
     display: flex;
     flex-direction: column;
     flex-basis: 49%;
@@ -288,7 +292,10 @@ a {
     color: var(--purple);
 }
 
-.heart-outline:hover ~ .heart-solid, .heart-solid:hover {
+.heart-outline:hover ~ .heart-solid,
+.heart-solid:hover,
+.heart-outline:focus ~ .heart-solid,
+.heart-solid:focus {
     transform: scale(1)!important;
 }
 
@@ -307,7 +314,7 @@ footer div {
 
 footer h3 {
     font-size: 1.2rem;
-    font-family: "Shrikhand",cursive;
+    font-family: Shrikhand, cursive;
     margin: 0;
 }
 
@@ -326,7 +333,7 @@ footer ul {
         flex-direction: row;
     }
 
-    #restaurants article {
+    .container-figure {
         display: flex;
         flex-flow: row wrap;
     }
