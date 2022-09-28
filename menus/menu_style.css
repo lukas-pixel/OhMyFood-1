@@ -76,6 +76,42 @@ body article h1 {
 
 /* MENUS DES RESTAURANTS */
 
+li {
+    position: relative;
+    animation-name: animationMenu;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.84,.44,1);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes animationMenu {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.item1 {
+    animation-delay: 300ms;
+}
+
+.item2 {
+    animation-delay: 600ms;
+}
+
+.item3 {
+    animation-delay: 900ms;
+}
+
+.item4 {
+    animation-delay: 1200ms;
+}
+
 h2 {
     text-transform: uppercase;
     text-decoration : underline var(--green-light) 3px;
