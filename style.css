@@ -46,18 +46,7 @@ body {
     position: relative;
     font-family: Roboto;
     margin: 0;
-    overflow-y: scroll;
-    /*overflow-x: hidden;
-    overflow-y: hidden; */
-}
-
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+    overflow-x: hidden;
 }
 
 /* overlays */
@@ -122,8 +111,7 @@ body header {
     padding-bottom: 30px;
 }
 
-body > header > img {
-    width: 300px;
+body header img {
     height: 50px;
     margin: auto;
 }
@@ -348,4 +336,10 @@ footer ul {
         flex-flow: row wrap;
     }
 
+    .heart-outline:active ~ .heart-solid,
+    .heart-solid:active,
+    .heart-outline:focus ~ .heart-solid,
+    .heart-solid:focus {
+    transform: scale(1)!important;
+}
 }
