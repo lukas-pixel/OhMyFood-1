@@ -3,13 +3,26 @@
     --white:#fff;
     --grey-light:#f6f6f6;
     --grey-dark:#353535;
-    --underline-green-light:#99E2D0;
+    --green-light:#99E2D0;
+    --purple:#9356DC;
+}
+
+@keyframes animationMenu {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 body {
     margin: 0;
     font-family: "Roboto",sans-serif;
     color: var(--black);
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -50,6 +63,38 @@ body > figure > img {
     width: 100%;
 }
 
+/* Titre */
+
+.containerTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-heart {
+    width: 50px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 20px;
+}
+
+.heart-solid {
+    transition: all 400ms;
+    transform: scale(0);
+    color: var(--purple);
+}
+
+.heart-outline:hover ~ .heart-solid,
+.heart-solid:hover,
+.heart-outline:focus ~ .heart-solid,
+.heart-solid:focus {
+    transform: scale(1)!important;
+}
+
 /* MENU */
 
 body article {
@@ -74,9 +119,34 @@ body article h1 {
 
 /* MENUS DES RESTAURANTS */
 
+li {
+    position: relative;
+    animation-name: animationMenu;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.84,.44,1);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.item1 {
+    animation-delay: 300ms;
+}
+
+.item2 {
+    animation-delay: 600ms;
+}
+
+.item3 {
+    animation-delay: 900ms;
+}
+
+.item4 {
+    animation-delay: 1200ms;
+}
+
 h2 {
     text-transform: uppercase;
-    text-decoration : underline var(--underline-green-light) 3px;
+    text-decoration : underline var(--green-light) 3px;
     font-size: 16px;
 }
 
@@ -85,6 +155,30 @@ ul {
     list-style-type: none;
 }
 
+.containerCheck {
+    width: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--green-light);
+    overflow: hidden;
+}
+
+.containerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fa-circle-check {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    color: var(--white);
+    transition-duration: 1s;
+    transform: rotate(180deg);
+}
 /* ENTREE */
 
 .entree ul {
@@ -102,16 +196,44 @@ ul {
 }
 
 .entree div {
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+.entree li:hover > .containerMenu {
+    width: 90%;
+}
+
+.entree li:hover > .containerCheck {
+    width: 10%;
+}
+
+.entree li:hover > .containerCheck > i {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.containerMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerCheck i {
+    transition-duration: 1s;
+    transform: rotate(180deg);
+}
+
+.textMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1080px;
 }
 
 .entree span {
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 13px;
+    flex-direction: column;
+    justify-content: center;
     width: 50px;
     height: 57px;
 }
@@ -145,16 +267,27 @@ p {
 }
 
 .plats div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1080px;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+.plats li:hover > .containerMenu {
+    width: 90%;
+}
+
+.plats li:hover > .containerCheck {
+    width: 10%;
+}
+
+.plats li:hover > .containerCheck > i {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .plats span {
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 13px;
+    flex-direction: column;
+    justify-content: center;
     width: 50px;
     height: 57px;
 }
@@ -176,16 +309,27 @@ p {
 }
 
 .desserts div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1080px;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+.desserts li:hover > .containerMenu {
+    width: 90%;
+}
+
+.desserts li:hover > .containerCheck {
+    width: 10%;
+}
+
+.desserts li:hover > .containerCheck > i {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 .desserts span {
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 13px;
+    flex-direction: column;
+    justify-content: center;
     width: 50px;
     height: 57px;
 }
