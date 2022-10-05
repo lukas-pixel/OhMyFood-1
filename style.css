@@ -284,17 +284,22 @@ a {
     top: 20px;
 }
 
+.like {
+    display: none;
+}
+
 .heart-solid {
     transition: all 400ms;
     transform: scale(0);
     color: var(--purple);
 }
 
+.like:checked + label > .heart-solid,
 .heart-outline:hover ~ .heart-solid,
 .heart-solid:hover,
 .heart-outline:focus ~ .heart-solid,
 .heart-solid:focus {
-    transform: scale(1)!important;
+    transform: scale(1) !important;
 }
 
 /* FOOTER */
@@ -335,11 +340,4 @@ footer ul {
         display: flex;
         flex-flow: row wrap;
     }
-
-    .heart-outline:active ~ .heart-solid,
-    .heart-solid:active,
-    .heart-outline:focus ~ .heart-solid,
-    .heart-solid:focus {
-    transform: scale(1)!important;
-}
 }
